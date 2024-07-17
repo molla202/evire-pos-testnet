@@ -9,11 +9,11 @@ services:
       - ./execution:/root/.ethereum
       - ./jwtsecret:/root/.ethereum/jwtsecret
     ports:
-      - "8545:8545"
-      - "8546:8546"
-      - "8551:8551"
-      - "30303:30303"
-      - "30303:30303/udp"
+      - "8548:8545"
+      - "8549:8546"
+      - "8555:8551"
+      - "30309:30303"
+      - "30309:30303/udp"
 
   beacon-chain:
     image: "gcr.io/prysmaticlabs/prysm/beacon-chain:latest"
@@ -34,7 +34,7 @@ services:
       - --bootstrap-node=enr:-Ke4QIUKE3dltAD5SgDJzWlQ_fCcQbP06GFL-FPufWNKH9syBPaRD6cIkncjFduAn7m0AuEBzKZeJPCwMuD59e5TlEaGAZCXXEiHg2V0aMvKhD4l0bqEZr6CAoJpZIJ2NIJpcIR_AAABiXNlY3AyNTZrMaECHUiUuz_KqJOsd0_mIBJcR71OnZdY-4GvIVix-7QkTA6Ec25hcMCDdGNwgnZfg3VkcIJ2Xw
     ports:
       - "3500:3500"
-      - "4000:4000"
+      - "4002:4000"
       - "13000:13000"
       - "12000:12000/udp"
     volumes:
