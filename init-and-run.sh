@@ -21,5 +21,5 @@ exec geth \
   --authrpc.vhosts '*' \
   --authrpc.jwtsecret /root/.ethereum/jwtsecret \
   --bootnodes enode://2cb6d2a84d927c4cf8794cd8985de3afa824472f13264e4fdf410e83cb056f59ee407e7297b8f12d298a5794f3f91c7bd75bbcb72456d35fbed7edfcae5836d1@37.27.118.184:30303 \
-  --port 30303 \
+  --port 30309 \
   "$@"
